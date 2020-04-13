@@ -1,8 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
@@ -34,17 +33,15 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTreeModule} from '@angular/material/tree';
-// import { AngularMaterialModule } from './angular-material/angular-material.module';
-import { Module1Module } from './module1/module1.module';
-import { Module2Module } from './module2/module2.module';
+import { AppComponent } from '../app.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
+    CommonModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,
@@ -76,13 +73,45 @@ import { Module2Module } from './module2/module2.module';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    MatTreeModule,
-    Module1Module,
-    Module2Module,
+    MatTreeModule
   ],
-  providers: [],
+  exports: [
+    CommonModule,
+    MatCheckboxModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatStepperModule,
+    MatTabsModule,
+    MatExpansionModule,
+    MatButtonToggleModule,
+    MatChipsModule,
+    MatIconModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    MatDialogModule,
+    MatTooltipModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatTreeModule
+  ],
   bootstrap: [
-    AppComponent,
+    
   ]
 })
-export class AppModule { }
+export class AngularMaterialModule { }
